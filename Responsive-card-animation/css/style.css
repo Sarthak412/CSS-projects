@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e2e2e2;
+    font-family: monospace;
+}
+
+.container{
+    width: 90%;
+    margin: 50px auto;   
+}
+
+.head-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s ease-in-out;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.card-title{
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #FFFFFF;
+    background-color: #454d74;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+}
+
+.card-body{
+    padding: 30px 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.button{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: #2e2e2e;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 0.5em;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.45);
+}
+
+.button:hover,
+.button:focus {
+    background-color: #620ea7;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+@media screen and (max-width:1000px){
+    .card{
+        width: 40%;
+    } 
+}
+
+@media screen and (max-width:620px){
+
+    .container{
+        width: 100%;
+    }
+
+    .head-title{
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .card{
+        width: 80%;
+    } 
+}
