@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #470197; 
+}
+
+.head-title{
+    color: #fefefe;
+    font-size: 25px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.container{
+    width: 90%;
+    margin: 50px auto;   
+}
+
+.button{
+    background-color: #363636;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 0.6em;
+    line-height: 20px;
+    box-shadow: 10px 14px 38px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 14px 38px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 14px 38px -6px rgba(0,0,0,0.75);
+    width: 25ch;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.button:hover{
+    background: rgb(25, 177, 25);
+    transition: 0.5s;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 8% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 0.5em;
+    height: 70%;
+}
+
+.closebtn{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+.closebtn:hover, .closebtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding-top: 50px;
+}
